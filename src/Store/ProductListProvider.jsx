@@ -8,7 +8,7 @@ import { createContext, useState } from "react";
 
 const ProductListProvider = ({ children }) => {
 
-    const totalAmount=15683345400000
+    const totalAmount=1568334540000
     var [remainAmount,setReamainAmount]=useState(totalAmount)
     var [percentageUsed,setPercentageUsed]=useState(0)
 
@@ -21,7 +21,7 @@ const ProductListProvider = ({ children }) => {
     { id: 3, image:"card/Xbox_SeriesX.jpg", title: "Xbox SeriesX", price:  41000, quantity: 0 },
     { id: 4, image:"card/Iphone15_proMax.jpg", title: "Iphone15 Pro Max", price:  149999, quantity: 0 },
     { id: 5, image:"card/samsung.png", title: "Samsung S23 Ultra - 1TB", price:  12599, quantity: 0 },
-    { id: 6, image:"card/airpod.jpg", title: "MacBook Pro 14' M3 Max ", price: 392131, quantity: 0 },
+    { id: 6, image:"card/laptop.png", title: "MacBook Pro 14' M3 Max ", price: 392131, quantity: 0 },
     { id: 7, image:"card/Gaming_cpu.jpg", title: "Gaming Pc", price: 550000, quantity: 0 },
     { id: 8, image:"card/Razer_blade.jpg", title: "Razer Blade 14 Top spec", price: 320000, quantity: 0 },
     { id: 9, image:"card/IpadAir.jpg", title: "Ipad Air M2 Chip(256 GB)", price: 62599 , quantity: 0 },
@@ -71,7 +71,7 @@ const ProductListProvider = ({ children }) => {
         var tempAmount=remainAmount-(p.price);
         setReamainAmount(tempAmount)
     
-        var perct=((totalAmount-tempAmount)/totalAmount)*100
+        var perct=(((totalAmount-tempAmount)/totalAmount)*100).toFixed(8)
         setPercentageUsed(perct)
     }
   };
@@ -87,7 +87,7 @@ const ProductListProvider = ({ children }) => {
         var tempAmount=remainAmount+(products[SId].price);
         setReamainAmount(tempAmount)
 
-        var perct=((totalAmount-tempAmount)/totalAmount)*100
+        var perct=(((totalAmount-tempAmount)/totalAmount)*100).toFixed(5)
         setPercentageUsed(perct)
 
     }

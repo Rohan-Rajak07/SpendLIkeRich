@@ -9,7 +9,7 @@ const HeroSection = () => {
                 <p>If Mukhesh Ambnai cashed out all of his stocks & assets today he would have <br/>
                     approximately <b>RS 1,56,83,34,54,00,000 (7.6 lakh crores) </b>in his bank account.</p>
                     <p>¿What would you spend it on?</p>
-                <button>Vist to Know More</button>
+                  <a href="https://en.wikipedia.org/wiki/Mukesh_Ambani"><button>Vist to Know More</button></a>
             </div>
         </section>
   )
