@@ -6,7 +6,7 @@ const PriceSection = () => {
   const{remainAmount,percentageUsed}=useContext(ProductList)
   return (
     <section className="totalamount">
-            <p>Remaining: {remainAmount} INR</p>
+            <p>Remaining: {remainAmount.toLocaleString()} INR</p>
             <p>You only spent {percentageUsed} % of the total!</p>
     </section>
   )

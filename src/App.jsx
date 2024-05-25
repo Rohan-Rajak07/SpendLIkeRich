@@ -12,7 +12,7 @@ import Background from './Components/Background';
 function App() {
   return (
     <ProductListProvider >
-        <Background/>
+        {/* <Background/> */}
         <Header />
         <HeroSection />
         <PriceSection />

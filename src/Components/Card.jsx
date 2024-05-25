@@ -10,7 +10,7 @@ const Card = ({product}) => {
     <div className="card">
       <img src={product.image} alt="image"/>
       <p className="iname">{product.title}</p>
-      <p className="iprice">RS {product.price}</p>
+      <p className="iprice">RS {product.price.toLocaleString()}</p>
       <div className="button">
         <button onClick={()=>productSell(product.id)} className="sell">Sell</button>
         <div className="qunty">{product.quantity}</div>

@@ -17,10 +17,11 @@ body {
 nav {
   /* height: 80px; */
   /* background-color: #A79277; */
-  background-color: orangered;
+  /* background-color: orangered; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 4rem ;
 }
 
 .logo {
@@ -63,13 +64,17 @@ section .aboutbox {
   border-radius: 8px;
   border: 1px solid black;
   font-family: sans-serif;
+  transition: all linear 0.1s;
 }
 
 .aboutbox button:hover {
-  background-color: rgba(188, 154, 82, 0.559);
+  /* background-color: rgba(188, 154, 82, 0.559); */
+  background-color: orangered;
+  border: none;
   color: white;
   font-weight: bold;
-  font-size: 15px;
+  /* font-size: 15px; */
+  transform: scale(1.05);
 }
 
 .totalamount {
