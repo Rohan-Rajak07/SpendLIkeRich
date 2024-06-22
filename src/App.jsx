@@ -7,12 +7,14 @@ import CardList from "./Components/CardList";
 import ProductListProvider from "./Store/ProductListProvider";
 import Footer from './Components/Footer';
 import Background from './Components/Background';
+import Blurx from './Components/Blurx';
 
 
 function App() {
   return (
     <ProductListProvider >
         {/* <Background/> */}
+        <Blurx/>
         <Header />
         <HeroSection />
         <PriceSection />
